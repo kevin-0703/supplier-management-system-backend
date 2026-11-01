@@ -61,4 +61,10 @@ public class BranchService {
         return "Branch deleted successfully";
     }
 
+    public List<Branch> getFreeBranches() {
+        List<Branch> freeBranches = branchRepo.findFreeBranches();
+        return freeBranches;
+    }
+
 }
+

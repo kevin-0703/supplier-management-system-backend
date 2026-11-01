@@ -10,6 +10,8 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -26,20 +28,32 @@ public class PurchaseOrder {
     @Column(name = "status")
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
+
     String description;
 
     @Column(name = "total_amount")
     double totalAmount;
 
+    @ManyToOne
+    @JoinColumn(name = "supplier_id")
+    private Supplier supplier;
+
+    @ManyToOne
+    @JoinColumn(name = "procurement_officer_id")
+    private ProcurementOfficer procurementOfficer;
+
     public PurchaseOrder() {
     }
 
-    public PurchaseOrder(UUID id, LocalDate orderDate, OrderStatus status, String description, double totalAmount) {
+    public PurchaseOrder(UUID id, LocalDate orderDate, OrderStatus status, String description, double totalAmount,
+            Supplier supplier, ProcurementOfficer procurementOfficer) {
         this.id = id;
         this.orderDate = orderDate;
         this.status = status;
         this.description = description;
         this.totalAmount = totalAmount;
+        this.supplier = supplier;
+        this.procurementOfficer = procurementOfficer;
     }
 
     public UUID getId() {
@@ -80,6 +94,22 @@ public class PurchaseOrder {
 
     public void setTotalAmount(double totalAmount) {
         this.totalAmount = totalAmount;
+    }
+
+    public Supplier getSupplier() {
+        return supplier;
+    }
+
+    public void setSupplier(Supplier supplier) {
+        this.supplier = supplier;
+    }
+
+    public ProcurementOfficer getProcurementOfficer() {
+        return procurementOfficer;
+    }
+
+    public void setProcurementOfficer(ProcurementOfficer procurementOfficer) {
+        this.procurementOfficer = procurementOfficer;
     }
 
 }
