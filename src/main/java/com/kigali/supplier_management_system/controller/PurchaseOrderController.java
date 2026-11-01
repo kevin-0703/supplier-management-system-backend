@@ -92,6 +92,10 @@ public class PurchaseOrderController {
             return new ResponseEntity<>(result, HttpStatus.NOT_FOUND);
         }
 
+        if (result.equals("That purchase order has delivery notes, delete them first")) {
+            return new ResponseEntity<>(result, HttpStatus.CONFLICT);
+        }
+
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
@@ -123,6 +127,19 @@ public class PurchaseOrderController {
             return new ResponseEntity<>(result, HttpStatus.BAD_REQUEST);
         }
 
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/stats/by-status")
+    public ResponseEntity<List<Object[]>> getStatsByStatus() {
+        return new ResponseEntity<>(purchaseOrderService.getPurchaseOrderStatsByStatus(), HttpStatus.OK);
+    }
+
+    @PatchMapping(value = "/cancel-day")
+    public ResponseEntity<String> cancelOrdersForOfficerOnDate(@RequestParam UUID procurementOfficerId,
+            @RequestParam String date) {
+        LocalDate orderDate = LocalDate.parse(date);
+        String result = purchaseOrderService.cancelPurchaseOrdersForOfficerOnDate(procurementOfficerId, orderDate);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 

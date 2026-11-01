@@ -15,6 +15,7 @@ import com.kigali.supplier_management_system.domain.Supplier;
 import com.kigali.supplier_management_system.repository.ProcurementOfficerRepository;
 import com.kigali.supplier_management_system.repository.PurchaseOrderRepository;
 import com.kigali.supplier_management_system.repository.SupplierRepository;
+import com.kigali.supplier_management_system.repository.DeliveryNoteRepository;
 
 @Service
 public class PurchaseOrderService {
@@ -28,6 +29,10 @@ public class PurchaseOrderService {
     @Autowired
     private ProcurementOfficerRepository procurementOfficerRepo;
 
+    @Autowired
+    private DeliveryNoteRepository deliveryNoteRepo;
+
+    public String savePurchaseOrder(PurchaseOrder purchaseOrder) {
         if (purchaseOrder.getOrderDate().isBefore(LocalDate.now())) {
             return "Purchase order date cannot be in the past";
         }
@@ -115,8 +120,22 @@ public class PurchaseOrderService {
             return "The purchase order with that id does not exist";
         }
 
+        if (deliveryNoteRepo.existsByPurchaseOrder(order.get())) {
+            return "That purchase order has delivery notes, delete them first";
+        }
+
         purchaseOrderRepo.deleteById(id);
         return "Purchase order deleted successfully";
+    }
+
+    public List<Object[]> getPurchaseOrderStatsByStatus() {
+        return purchaseOrderRepo.countOrdersByStatus();
+    }
+
+    public String cancelPurchaseOrdersForOfficerOnDate(UUID officerId, LocalDate date) {
+        int cancelled = purchaseOrderRepo.cancelOrdersForOfficerOnDate(
+                officerId, date, OrderStatus.CANCELLED, OrderStatus.FULFILLED);
+        return cancelled + " purchase orders cancelled";
     }
 
     public List<PurchaseOrder> getPurchaseOrdersByStatus(OrderStatus status) {
@@ -163,5 +182,5 @@ public class PurchaseOrderService {
         }
     }
 
-
+}
 

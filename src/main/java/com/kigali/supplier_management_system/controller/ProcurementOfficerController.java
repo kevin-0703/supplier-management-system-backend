@@ -49,7 +49,7 @@ public class ProcurementOfficerController {
     public ResponseEntity<?> getProcurementOfficerById(@PathVariable UUID id) {
         Optional<ProcurementOfficer> officer = procurementOfficeService.getProcurementOfficerById(id);
         if (officer == null || officer.isEmpty()) {
-            return new ResponseEntity<>("The procurement office with that id does not exist", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("The procurement officer with that id does not exist", HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(officer, HttpStatus.OK);
     }

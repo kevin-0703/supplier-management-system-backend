@@ -1,0 +1,1220 @@
+{
+  "info": {
+    "_postman_id": "c037cb6e-d1d2-438d-af22-e90365b38c39",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48031208"
+  },
+  "item": [
+    {
+      "name": "A - seed IT equipment",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"IT Equipment\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/supply-categories/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "supply-categories",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - seed food supplies",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Food Supplies\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/supply-categories/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "supply-categories",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - seed cleaning materials",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Cleaning Materials\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/supply-categories/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "supply-categories",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - branch1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"branchNumber\":1,\"name\":\"Kigali Branch 1\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/branches/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "branches",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - branch 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"branchNumber\":2,\"name\":\"Kigali Branch 2\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/branches/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "branches",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - seed branch 3",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"branchNumber\":3,\"name\":\"Kigali Branch 3\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/branches/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "branches",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - seed branch 4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"branchNumber\":4,\"name\":\"Kigali Branch 4\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/branches/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "branches",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - procurement officer 1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"firstName\":\"Aline\",\"lastName\":\"Mukamana\",\"email\":\"aline.mukamana@example.com\",\"branch\":{\"id\":\"abeef12a-d76c-4600-9d81-7823eea4a47e\",\"branchNumber\":1,\"name\":\"Kigali Branch 1\"},\"supplyCategories\":[{\"id\":\"840c029f-938d-412f-a01d-a550018abc88\"},{\"id\":\"56a71069-9f28-4c78-8ba5-37931aa6286c\"}]}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/procurement-officers/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "procurement-officers",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - procurement officer 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"firstName\":\"Eric\",\"lastName\":\"Niyonsenga\",\"email\":\"eric.niyonsenga@example.com\",\"branch\":{\"id\":\"3d177278-70ae-4482-bddf-50a12f740a4c\",\"branchNumber\":2,\"name\":\"Kigali Branch 2\"},\"supplyCategories\":[{\"id\":\"bd5ab0ce-c795-463f-a299-e8e2af6afb83\"}]}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/procurement-officers/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "procurement-officers",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - procurement officer 3",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"firstName\":\"Diane\",\"lastName\":\"Uwamahoro\",\"email\":\"diane.uwamahoro@example.com\",\"branch\":{\"id\":\"050e0f08-e415-479c-8d24-9f77a1cf61db\",\"branchNumber\":3,\"name\":\"Kigali Branch 3\"},\"supplyCategories\":[{\"id\":\"840c029f-938d-412f-a01d-a550018abc88\"}]}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/procurement-officers/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "procurement-officers",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - supplier 1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"companyName\":\"Kigali Office Supplies\",\"contactName\":\"Nshuti\",\"tin\":\"TIN-100001\",\"email\":\"contact@kigali-office.example\",\"phone\":\"0781000001\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/suppliers/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "suppliers",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - supplier 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"companyName\":\"Rwanda Technology Traders\",\"contactName\":\"Nshuti\",\"tin\":\"TIN-100002\",\"email\":\"sales@rwanda-tech.example\",\"phone\":\"0781000002\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/suppliers/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "suppliers",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - purchase 2 order in the past",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-10-10\",\"status\":\"ISSUED\",\"description\":\"Printer and accessories\",\"totalAmount\":540000,\"supplier\":{\"id\":\"19dfea2f-93cf-46d9-8be2-ac91b73250b6\"},\"procurementOfficer\":{\"id\":\"1c3a62e8-2200-4089-afb6-0a921b14adb5\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - supplier 3",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"companyName\":\"Fresh Foods Rwanda\",\"contactName\":\"Jean Bosco\",\"tin\":\"TIN-100003\",\"email\":\"orders@fresh-foods.example\",\"phone\":\"0781000003\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/suppliers/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "suppliers",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - supplier 4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"companyName\":\"Eastern General Traders\",\"contactName\":\"Alice Uwase\",\"tin\":\"TIN-100004\",\"email\":\"info@eastern-traders.example\",\"phone\":\"0781000004\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/suppliers/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "suppliers",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - supplier 5",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"companyName\":\"Clean World Ltd\",\"contactName\":\"Patrick Habimana\",\"tin\":\"TIN-100005\",\"email\":\"hello@clean-world.example\",\"phone\":\"0781000005\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/suppliers/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "suppliers",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - failed check purchase order in the past",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-10-05\",\"status\":\"ISSUED\",\"description\":\"Office stationery order\",\"totalAmount\":125000,\"supplier\":{\"id\":\"38eef050-abaa-4b67-9327-365ad56dff50\"},\"procurementOfficer\":{\"id\":\"ea78a6c9-0dae-4b54-8930-ebf0c5f64bea\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - order 3 in the past",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-10-15\",\"status\":\"ISSUED\",\"description\":\"Catering supplies\",\"totalAmount\":87000,\"supplier\":{\"id\":\"2e19443e-404a-448a-b34c-18f3500807ba\"},\"procurementOfficer\":{\"id\":\"ea78a6c9-0dae-4b54-8930-ebf0c5f64bea\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "C2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/branches/free",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "branches",
+            "free"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "order 4 in the past",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-10-20\",\"status\":\"ISSUED\",\"description\":\"Stationery order cancelled\",\"totalAmount\":92000,\"supplier\":{\"id\":\"19dfea2f-93cf-46d9-8be2-ac91b73250b6\"},\"procurementOfficer\":{\"id\":\"1c3a62e8-2200-4089-afb6-0a921b14adb5\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - order 5 i. the past",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-10-20\",\"status\":\"ISSUED\",\"description\":\"Additional office supplies\",\"totalAmount\":138000,\"supplier\":{\"id\":\"38eef050-abaa-4b67-9327-365ad56dff50\"},\"procurementOfficer\":{\"id\":\"1c3a62e8-2200-4089-afb6-0a921b14adb5\"}}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - order 6 in the past",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-10-25\",\"status\":\"ISSUED\",\"description\":\"Food supplies delivery\",\"totalAmount\":215000,\"supplier\":{\"id\":\"2e19443e-404a-448a-b34c-18f3500807ba\"},\"procurementOfficer\":{\"id\":\"ea78a6c9-0dae-4b54-8930-ebf0c5f64bea\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - order 7",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-11-02\",\"status\":\"ISSUED\",\"description\":\"Monthly stationery replenishment\",\"totalAmount\":164000,\"supplier\":{\"id\":\"19dfea2f-93cf-46d9-8be2-ac91b73250b6\"},\"procurementOfficer\":{\"id\":\"ecf10e25-4891-4f73-a484-833b68da070c\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - order 8",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-11-05\",\"status\":\"ISSUED\",\"description\":\"Office equipment order\",\"totalAmount\":720000,\"supplier\":{\"id\":\"38f37a8f-3dfa-49a1-b27e-7251c1ecc069\"},\"procurementOfficer\":{\"id\":\"1c3a62e8-2200-4089-afb6-0a921b14adb5\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - order 9",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-11-10\",\"status\":\"ISSUED\",\"description\":\"Cleaning products order\",\"totalAmount\":98000,\"supplier\":{\"id\":\"70413b84-df1c-4993-b9c3-b561d5a5e122\"},\"procurementOfficer\":{\"id\":\"ea78a6c9-0dae-4b54-8930-ebf0c5f64bea\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A - order 10",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-11-15\",\"status\":\"ISSUED\",\"description\":\"Food supplies replenishment\",\"totalAmount\":106000,\"supplier\":{\"id\":\"2e19443e-404a-448a-b34c-18f3500807ba\"},\"procurementOfficer\":{\"id\":\"ecf10e25-4891-4f73-a484-833b68da070c\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "B1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/suppliers/by-contact-name?contactName=nshuti",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "suppliers",
+            "by-contact-name"
+          ],
+          "query": [
+            {
+              "key": "contactName",
+              "value": "nshuti"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "B2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/by-status?status=ISSUED",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "by-status"
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "ISSUED"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "B3",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/between?start=2026-10-01&end=2026-10-31",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "between"
+          ],
+          "query": [
+            {
+              "key": "start",
+              "value": "2026-10-01"
+            },
+            {
+              "key": "end",
+              "value": "2026-10-31"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "C1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/procurement-officers/by-supply-category?name=stationery",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "procurement-officers",
+            "by-supply-category"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "stationery"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "C3",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/supply-categories/unused",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "supply-categories",
+            "unused"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "C4",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/suppliers/of-procurement-officer/1c3a62e8-2200-4089-afb6-0a921b14adb5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "suppliers",
+            "of-procurement-officer",
+            "1c3a62e8-2200-4089-afb6-0a921b14adb5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "D1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"orderDate\":\"2026-10-20\",\"status\":\"ISSUED\",\"description\":\"Past date validation\",\"totalAmount\":100,\"supplier\":{\"id\":\"19dfea2f-93cf-46d9-8be2-ac91b73250b6\"},\"procurementOfficer\":{\"id\":\"ecf10e25-4891-4f73-a484-833b68da070c\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "D2",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/42cfea79-bda8-43e7-b78c-60d746fc1ff0/status?status=ACKNOWLEDGED",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "42cfea79-bda8-43e7-b78c-60d746fc1ff0",
+            "status"
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "ACKNOWLEDGED"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "D3",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/procurement-officers/ecf10e25-4891-4f73-a484-833b68da070c/supply-categories/e842995c-cf2a-4fc8-ba0e-ca3b0de111af",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "procurement-officers",
+            "ecf10e25-4891-4f73-a484-833b68da070c",
+            "supply-categories",
+            "e842995c-cf2a-4fc8-ba0e-ca3b0de111af"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "D4",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/procurement-officers/ea78a6c9-0dae-4b54-8930-ebf0c5f64bea/branch?branchNumber=4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "procurement-officers",
+            "ea78a6c9-0dae-4b54-8930-ebf0c5f64bea",
+            "branch"
+          ],
+          "query": [
+            {
+              "key": "branchNumber",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "E1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"itemName\":\"Delivered office supplies\",\"remarks\":\"Received in good condition\",\"quantity\":10}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/delivery-notes/save?purchaseOrderId={fulfilledOrderId}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "delivery-notes",
+            "save"
+          ],
+          "query": [
+            {
+              "key": "purchaseOrderId",
+              "value": "{fulfilledOrderId}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "E2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/delivery-notes/supplier/TIN-100001",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "delivery-notes",
+            "supplier",
+            "TIN-100001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "E3",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/delivery-notes/delete/{deliveryNoteId}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "delivery-notes",
+            "delete",
+            "{deliveryNoteId}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "F1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/stats/by-status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "stats",
+            "by-status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "F2",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/purchase-orders/cancel-day?procurementOfficerId={officerId}&date=2026-10-2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "purchase-orders",
+            "cancel-day"
+          ],
+          "query": [
+            {
+              "key": "procurementOfficerId",
+              "value": "{officerId}"
+            },
+            {
+              "key": "date",
+              "value": "2026-10-2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -31,8 +31,8 @@ public class ProcurementOfficer {
     @Column(name = "email")
     String email;
 
-    @Column(name = "branch_id", nullable = true)
     @ManyToOne
+    @JoinColumn(name = "branch_id", nullable = true)
     private Branch branch;
 
     @ManyToMany

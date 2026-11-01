@@ -95,6 +95,7 @@ public class ProcurementOfficeService {
         if (officer.isEmpty()) {
             return officer.empty();
         }
+        procurementOfficerRepo.deleteById(id);
         return officer;
     }
 
